@@ -19,12 +19,18 @@
     <section id="events">
       <h2>Events in Action</h2>
       <button v-on:click="addOne(1)">Add</button>
-      <button v-on:click="reduceOne(1)">Reduce</button>
+      <button v-on:click.right="reduceOne(1)">Reduce</button>
       <button v-on:click="resetResult(0)">Reset</button> <!-- Aggiunto da Daniel -->
       <button v-on:click="multiplyByTwo(2)">Moltiplica x2</button> <!-- Aggiunto da Daniel -->
+      <p v-once>Starting Counter: {{ counter }}</p> <!-- Tramite v-once, il contatore non viene aggiornato -->
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName">
-      <p>Your Name: {{ name }}</p>
+      <input type="text" v-model="name"> <!-- V-MODEL CONTROLLA DUE INPUT DIVERSI -->
+      <button  v-on:click="resetInput">Reset Input</button>
+      <p>Your Name: {{ outputFullname() }}</p>
+      <form v-on:submit.prevent="submitForm">
+        <input type="text">
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>

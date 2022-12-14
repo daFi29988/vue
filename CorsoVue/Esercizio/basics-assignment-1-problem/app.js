@@ -11,7 +11,7 @@ const app = Vue.createApp({
     methods: {
         favoriteNumber() {
             const randomNumber = Math.random();
-            if (randomNumber < 0.5) {
+            if (randomNumber > 0.5) {
             return 1;
         } else {
             return 0;

@@ -3,11 +3,22 @@ const app = Vue.createApp({
     return {
       counter: 0,
       name: '',
+      confirmedInput: '',
     };
   },
   methods: {
-    setName(e){
-      this.name = e.target.value;
+    outputFullname() {
+      if (this.name === '') {
+        return '';
+      } else {
+      return this.name + ' ' + 'Birbillone'
+    }
+    },
+    submitForm() {
+      alert('Submitted!');
+    },
+    setName(event){
+      this.name = event.target.value ;
     },
     addOne(num) {
       this.counter = this.counter + num;
@@ -20,8 +31,10 @@ const app = Vue.createApp({
     },
     multiplyByTwo(num) {
       this.counter = this.counter * num;
+    },
+    resetInput() {
+      this.name = '';
     }
-    
   }
 });
 
