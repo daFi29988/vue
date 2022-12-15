@@ -1,0 +1,9 @@
+1) Dichiarare const app = Vue.createApp( { } ) 
+
+2) Indicare (nell'ultima riga) a Vue dove deve agirare con app.mount('#NomeDellaSection')
+
+3) Scrivere dopo la CONST APP -> data() {
+QUI INSERIREMO I DATI DELL'OGGETTO}
+
+4) Subito dopo data(){} -> scriviamo i methods: {
+QUI INSERIAMO LE FUNZIONI};

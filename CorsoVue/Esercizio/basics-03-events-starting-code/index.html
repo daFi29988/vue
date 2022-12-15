@@ -24,9 +24,10 @@
       <button v-on:click="multiplyByTwo(2)">Moltiplica x2</button> <!-- Aggiunto da Daniel -->
       <p v-once>Starting Counter: {{ counter }}</p> <!-- Tramite v-once, il contatore non viene aggiornato -->
       <p>Result: {{ counter }}</p>
-      <input type="text" v-model="name"> <!-- V-MODEL CONTROLLA DUE INPUT DIVERSI -->
+      <input type="text" v-model="name">
+      <input type="text" v-model="lastName"> <!-- V-MODEL CONTROLLA DUE INPUT DIVERSI -->
       <button  v-on:click="resetInput">Reset Input</button>
-      <p>Your Name: {{ outputFullname() }}</p>
+      <p>Your Name: {{ fullname }}</p>
       <form v-on:submit.prevent="submitForm">
         <input type="text">
         <button>Sign Up</button>
