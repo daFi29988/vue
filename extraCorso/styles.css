@@ -1,0 +1,12 @@
+button {
+    border-radius: 1cm;
+    height: 1.5cm;
+    width: 1.5cm;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    border: solid 0.2cm;
+    height: 1cm;
+}

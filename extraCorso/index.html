@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<header>
+    <h1>Calcolatrice Pro</h1>
+</header>
+<body>
+    <section id="assignment">
+        <p>{{ result }}</p>
+<button @click="add(7)">7</button> <button @click="add(8)">8</button> <button @click="add(9)">9</button> <button>/</button>
+<hr>
+<button>4</button> <button>5</button> <button>6</button> <button>x</button>
+<hr>
+<button>1</button> <button>2</button> <button>3</button> <button>-</button>
+<hr>
+<button>0</button> <button>.</button> <button>=</button> <button>+</button>
+
+    </section>
+</body>
+</html>
