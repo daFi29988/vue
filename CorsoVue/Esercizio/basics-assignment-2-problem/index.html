@@ -26,7 +26,11 @@
       <p>{{ confermName }}</p>
       <hr />
       <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
-      <input type="text" v-on:input="salvaName_Enter" v-on:keyup.enter="confermaInput_Enter" />
+      <input
+        type="text"
+        v-on:input="salvaName_Enter"
+        v-on:keyup.enter="confermaInput_Enter"
+      />
       <p>{{confermName_Enter}}</p>
     </section>
   </body>
