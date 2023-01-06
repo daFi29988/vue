@@ -40,7 +40,7 @@ export default {
         return {
             resources: this.storedResources,
             addResource: this.addResource,
-            deleteResource: this.removeResource
+            deleteResource: this.removeResource,
         };
     },
     computed: {
@@ -49,7 +49,7 @@ export default {
         },
         addResButtonMode() {
             return this.selectedTab === 'add-resource' ? null : 'flat';
-        }
+        },
     },
     methods: {
         setSelectedTab(tab) {
@@ -65,10 +65,10 @@ export default {
             this.storedResources.unshift(newResource);
             this.selectedTab = 'stored-resources';
         },
-        /* removeResource(resId) {
-            this.storedResources = this.storedResources.findIndex(res => id === resId);
+        removeResource(resId) {
+            const resIndex = this.storedResources.findIndex(res => res.id === resId);
             this.storedResources.splice(resIndex, 1);
-        } */
+        }
     }
 }
 </script>
